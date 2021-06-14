@@ -1,5 +1,12 @@
-
 function new_bounds = getCarInFront(bounds)
+    % Get the bounding box of the car in front
+    %
+    % Input:
+    % bounds        Bounding boxes containing cars
+    %
+    % Output:
+    % new_bounds    Bounding box of the car in front
+    
     leftMargin = 550;
     rightMargin = 730;
     new_bounds = [];

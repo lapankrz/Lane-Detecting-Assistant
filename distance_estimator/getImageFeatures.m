@@ -1,5 +1,12 @@
-
 function features = getImageFeatures(img)
+    % Extract HOG image features
+    %
+    % Input:
+    % img           Input photo (suggested resolutions are HD or Full HD)
+    %
+    % Output:
+    % features      Calculated HOG features
+
     hog_bins = 9;
     pix_per_cell = 8;
     cells_per_block = 2;

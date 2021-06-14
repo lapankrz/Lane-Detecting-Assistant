@@ -1,4 +1,13 @@
 function new_bounds = splitMergedBounds(heatmap, bounds)
+    % Split bounding boxes of multiple cars merged into one
+    %
+    % Input:
+    % heatmap       Heatmap of detected cars
+    % bounds        Bounding boxes containing cars
+    %
+    % Output:
+    % new_bounds    Split bounding boxes
+
     max_width = 250;
     limit_threshold = 0.4;
     new_bounds = double.empty(0,4);

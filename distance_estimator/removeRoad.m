@@ -1,6 +1,13 @@
-
-
 function new_bounds = removeRoad(I, bounds)
+    % Remove road from the bottom of a bounding box containing a car
+    %
+    % Input:
+    % I             Input photo (suggested resolutions are HD or Full HD)
+    % bounds        Bounding boxes containing cars
+    %
+    % Output:
+    % new_bounds    Bounding boxes with removed road
+
     threshold = 25;
     diff_percentage = 0.2;
     new_bounds = bounds(:, :);

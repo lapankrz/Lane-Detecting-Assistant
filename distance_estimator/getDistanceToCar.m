@@ -1,5 +1,14 @@
-
 function [Iout, dist] = getDistanceToCar(I, bounds)
+    % Calculate distance to the car in front
+    %
+    % Input:
+    % I             Input photo (suggested resolutions are HD or Full HD)
+    % bounds        Bounding box of the car in front
+    %
+    % Output:
+    % Iout          Output photo transformed to bird's eye view
+    % dist          Distance to the car in front
+    
     [Iout, H, Rout] = transform_to_birds_eye(I, 400);
     
     x = bounds(1) + bounds(3) / 2;
@@ -18,5 +27,4 @@ function [Iout, dist] = getDistanceToCar(I, bounds)
     dist = sqrt(dist_x^2 + dist_y^2);
     
     Iout = insertObjectAnnotation(Iout, "circle", [new_x new_y 10], dist);
-    Iout = Iout;
 end
