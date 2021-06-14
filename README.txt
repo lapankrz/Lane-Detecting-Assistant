@@ -1,7 +1,4 @@
-To show function description write in command window:
+# Lane-Detecting-Assistant
 
-help function_name
-
-Script examples have been prepared to illustrate the use of these functions:
-example_transform_to_birds_eye.mlx
-example_cut_img_birds_eye_view.mlx
+MATLAB project for lane detection and front car distance estimation.  
+Authors: Krzysztof Łapan, Maciej Morawski
