@@ -10,7 +10,7 @@ function [A, B, C, D] = reference_points()
     % pb -  top right corner of the reactangle
     % pc -  bottom right corner of the reactangle
     % pd -  bottom left corner of the reactangle
-    %
+    
     % Author: Maciej Morawski
     
     A = [320 1]';           % top left point

@@ -12,7 +12,7 @@ function [Iout, H, Rout] = transform_to_birds_eye(Iin, cutting_level)
     % Iout          Output photo (transformed to bird's eye view)
     % H             Homography matrix       
     % R             Spatial referencing information of transformed image
-    %
+    
     % Author: Maciej Morawski
     
     hd_resolution = [720 1280];

@@ -1,7 +1,7 @@
-function [Iout, H, Rout] = cut_img_birds_eye_view(Iin, TL, BR)
+function [Iout, H] = cut_img_birds_eye_view(Iin, TL, BR)
     % Transform an image to a bird's eye view
     % and cut it to selected area defined by
-    % top left (TL) and bottom right (BR) corners
+    % top left (TP) and bottom right (BR) corners
     %
     % Input:
     % Iin           Input photo (suggested resolutions are HD or Full HD)
@@ -10,8 +10,8 @@ function [Iout, H, Rout] = cut_img_birds_eye_view(Iin, TL, BR)
     %
     % Output:
     % Iout          Output photo (transformed to bird's eye view and cut)
-    % H             Homography matrix
-    %
+    % H             Homography matrixs
+    
     % Author: Maciej Morawski
     
     cutting_level = 400;
